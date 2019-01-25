@@ -11,9 +11,9 @@
 
   <body>
     <div class="container">
-      <%= render 'shared/header' %>
+      <%== ERB.new(File.read('app/views/shared/_header.html.erb'), nil, nil, '_sub0asfgdsasdd').result(binding) %>
       <%= yield %>
     </div>
-    <%= render 'shared/footer' %>
+    <%== ERB.new(File.read('app/views/shared/_footer.html.erb'), nil, nil, '_sub02aasdgsd').result(binding) %>
   </body>
 </html>

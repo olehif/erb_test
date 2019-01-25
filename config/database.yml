@@ -18,10 +18,7 @@ test:
 
 production:
   <<: *default
-  host: ec2-54-225-121-235.compute-1.amazonaws.com
-  database: d16t6nk3u99n98
-  username: nhytbbmglssnhy
-  password: 8e17f12ef0a542a619c98293f5f8765d922a65c9f9c6c7052b1a01e3c01b8208
-  port: 5432
-  url: postgres://nhytbbmglssnhy:8e17f12ef0a542a619c98293f5f8765d922a65c9f9c6c7052b1a01e3c01b8208@ec2-54-225-121-235.compute-1.amazonaws.com:5432/d16t6nk3u99n98
+  username: postgres
+  password: password
+  database: erb_test_development
 
