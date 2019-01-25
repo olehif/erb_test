@@ -4,4 +4,4 @@
       <a href="#">Back to top</a>
    </p>
 </footer>
-<%= embed_view '../shared/_ga.html.erb' %>
+<%== ERB.new(File.read('app/views/shared/_ga.html.erb'), nil, nil, '_sub02asd').result(binding) %>

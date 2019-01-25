@@ -1,7 +1,8 @@
-<%= embed_view '../shared/_main_post.html.erb' %>
+<%== ERB.new(File.read('app/views/shared/_main_post.html.erb'), nil, nil, '_sub01').result(binding) %>
+
 
 <div class="row mb-2">
-  <%= embed_view '../shared/_second_post.html.erb' %>
+  <%== ERB.new(File.read('app/views/shared/_second_post.html.erb'), nil, nil, '_sub02').result(binding) %>
 </div>
 
 
@@ -11,9 +12,9 @@
       <h3 class="pb-3 mb-4 font-italic border-bottom">
         From the Firehose
       </h3>
-      <%= embed_view '../shared/_post.html.erb' %>
+      <%== ERB.new(File.read('app/views/shared/_post.html.erb'), nil, nil, '_sub03').result(binding) %>
     </div>
-    <%= embed_view '../shared/_side_menu.html.erb' %>
+    <%== ERB.new(File.read('app/views/shared/_side_menu.html.erb'), nil, nil, '_sub04').result(binding) %>
   </div>
 
   <%= paginate @posts, theme: 'twitter-bootstrap-4' %>
